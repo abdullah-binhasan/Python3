@@ -16,13 +16,13 @@ class Clothing:
         n+=1
     return count
 
-class shirt(Clothing):
+class Shirt(Clothing):
   material="Cotton"
-class pants(Clothing):
+class Pants(Clothing):
   material="Cotton"
   
-polo = shirt("Polo")
-sweatpants = pants("Sweatpants")
+polo = Shirt("Polo")
+sweatpants = Pants("Sweatpants")
 polo.add_item(polo.name, polo.material, 4)
 sweatpants.add_item(sweatpants.name, sweatpants.material, 6)
 current_stock = polo.Stock_by_Material("Cotton")
